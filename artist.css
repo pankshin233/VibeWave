@@ -1,0 +1,156 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0d14;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 20px 7%;
+  background: #121522;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #66efc5;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo span {
+  color: white;
+  margin-left: 5px;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #b9bdca;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  color: #66efc5;
+}
+
+main {
+  padding: 35px 7%;
+}
+
+.artist-profile {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 35px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #263a43, #171c2b);
+}
+
+.artist-avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #34394a;
+  font-size: 65px;
+}
+
+.verified {
+  color: #66efc5;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.artist-profile h1 {
+  margin: 8px 0;
+  font-size: 36px;
+}
+
+.artist-profile p {
+  color: #c6cad5;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 22px;
+  background: #66efc5;
+  color: #0b0d14;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.songs-section {
+  margin-top: 35px;
+}
+
+.song-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 18px;
+}
+
+.song-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #171c2b;
+}
+
+.song-card p {
+  color: #b9bdca;
+}
+
+.song-card button {
+  margin-top: 8px;
+}
+
+.player {
+  margin-top: 30px;
+  padding: 20px;
+  background: #171c2b;
+  border-radius: 12px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 20px 5%;
+  }
+
+  .artist-profile {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  }
+
+  .artist-profile h1 {
+    font-size: 28px;
+  }
+
+  .artist-avatar {
+    width: 110px;
+    height: 110px;
+  }
+}
