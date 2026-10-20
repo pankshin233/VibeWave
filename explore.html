@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore | VibeWave Music</title>
+  <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">VibeWave<span>Music</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="explore.html" class="active">Explore</a>
+      <a href="search.html">Search</a>
+      <a href="library.html">My Library</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h1>Explore Music</h1>
+      <p>Discover your next favourite song.</p>
+      <input id="musicSearch" type="search"
+        placeholder="Search songs or artists...">
+    </section>
+
+    <section class="music-section">
+      <h2>Popular Songs</h2>
+      <div id="songList" class="song-list"></div>
+      <p id="emptyMessage" hidden>No matching songs found.</p>
+    </section>
+
+    <section class="player">
+      <p id="nowPlaying">Choose a song to start listening</p>
+      <audio id="audioPlayer" controls></audio>
+    </section>
+  </main>
+
+  <script src="explore.js"></script>
+</body>
+</html>
