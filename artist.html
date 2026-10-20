@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artists | VibeWave Music</title>
+  <link rel="stylesheet" href="artist.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">VibeWave<span>Music</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="search.html">Search</a>
+      <a href="library.html">My Library</a>
+      <a href="playlist.html">Playlists</a>
+      <a href="artist.html" class="active">Artists</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="artist-profile">
+      <div class="artist-avatar">🎤</div>
+      <div>
+        <p class="verified">VIBEWAVE ARTIST</p>
+        <h1 id="artistName">VibeWave Artist</h1>
+        <p id="artistBio">
+          Discover fresh sounds, inspiring melodies, and new music.
+        </p>
+        <p id="songCount">3 songs</p>
+        <button id="followButton" type="button">Follow Artist</button>
+      </div>
+    </section>
+
+    <section class="songs-section">
+      <h2>Artist's Songs</h2>
+      <div id="artistSongs" class="song-list"></div>
+    </section>
+
+    <section class="player">
+      <p id="nowPlaying">Choose a song to listen</p>
+      <audio id="audioPlayer" controls></audio>
+    </section>
+  </main>
+
+  <script src="artist.js"></script>
+</body>
+</html>
