@@ -1,0 +1,134 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0d14;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 20px 7%;
+  background: #121522;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #66efc5;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo span {
+  color: white;
+  margin-left: 5px;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #b9bdca;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  color: #66efc5;
+}
+
+main {
+  max-width: 850px;
+  margin: auto;
+  padding: 35px 7%;
+}
+
+.upload-intro {
+  margin-bottom: 25px;
+}
+
+.upload-intro h1 {
+  font-size: 34px;
+}
+
+.upload-intro p {
+  color: #b9bdca;
+}
+
+.upload-card {
+  padding: 28px;
+  background: #171c2b;
+  border-radius: 16px;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #34394a;
+  border-radius: 8px;
+  background: #0b0d14;
+  color: white;
+}
+
+input[type="file"] {
+  padding: 12px;
+}
+
+button {
+  margin-top: 12px;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background: #66efc5;
+  color: #0b0d14;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+#fileInfo,
+#statusMessage {
+  color: #66efc5;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 24px 5%;
+  }
+
+  .upload-intro h1 {
+    font-size: 28px;
+  }
+
+  .upload-card {
+    padding: 20px;
+  }
+}
