@@ -1,0 +1,121 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0d14;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 20px 7%;
+  background: #121522;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #66efc5;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo span {
+  color: white;
+  margin-left: 5px;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #b9bdca;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  color: #66efc5;
+}
+
+main {
+  padding: 35px 7%;
+}
+
+.welcome,
+.create-section,
+.playlists-section {
+  padding: 25px;
+  margin-bottom: 25px;
+  background: #171c2b;
+  border-radius: 14px;
+}
+
+.welcome p {
+  color: #b9bdca;
+}
+
+form {
+  display: grid;
+  gap: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #34394a;
+  border-radius: 8px;
+  background: #0b0d14;
+  color: white;
+}
+
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 22px;
+  background: #66efc5;
+  color: #0b0d14;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.playlist-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.playlist-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #22283a;
+  overflow-wrap: anywhere;
+}
+
+.playlist-card p {
+  color: #b9bdca;
+}
+
+.playlist-card .delete-button {
+  background: #ff7777;
+}
+
+#statusMessage {
+  color: #66efc5;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 20px 5%;
+  }
+}
