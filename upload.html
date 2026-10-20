@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Music | VibeWave Music</title>
+  <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">VibeWave<span>Music</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="library.html">My Library</a>
+      <a href="upload.html" class="active">Upload Music</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="upload-intro">
+      <h1>Upload Your Music</h1>
+      <p>Share your sound with the VibeWave community.</p>
+    </section>
+
+    <section class="upload-card">
+      <form id="uploadForm">
+        <label for="songTitle">Song title</label>
+        <input id="songTitle" type="text" required maxlength="100"
+          placeholder="Enter song title">
+
+        <label for="artistName">Artist name</label>
+        <input id="artistName" type="text" required maxlength="100"
+          placeholder="Enter artist name">
+
+        <label for="genre">Music genre</label>
+        <select id="genre" required>
+          <option value="">Choose a genre</option>
+          <option>Afrobeats</option>
+          <option>Gospel</option>
+          <option>Hip-Hop</option>
+          <option>R&B</option>
+          <option>Pop</option>
+          <option>Reggae</option>
+          <option>Other</option>
+        </select>
+
+        <label for="audioFile">Choose audio file</label>
+        <input id="audioFile" type="file"
+          accept="audio/*" required>
+
+        <p id="fileInfo">Select an audio file from your device.</p>
+
+        <button id="uploadButton" type="submit">Upload Song</button>
+        <p id="statusMessage" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="upload.js"></script>
+</body>
+</html>
