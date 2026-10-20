@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VibeWave Music | Home</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">VibeWave<span>♪</span></a>
+    <button id="menuBtn" aria-label="Toggle menu"
+      aria-expanded="false">☰</button>
+    <nav id="navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="search.html">Search</a>
+      <a href="playlist.html">Playlists</a>
+      <a href="artist.html">Artists</a>
+      <a href="upload.html">Upload</a>
+      <a href="library.html">Library</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="tag">YOUR MUSIC, YOUR WORLD</p>
+        <h1>Feel the beat.<br><span>Live the music.</span></h1>
+        <p>Discover fresh songs, explore artists, and create your own vibe.</p>
+        <a class="button" href="explore.html">Explore Music →</a>
+      </div>
+      <div class="hero-art" aria-label="Music artwork">
+        <div class="disc">♫</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Browse Categories</h2>
+        <a href="explore.html">See all</a>
+      </div>
+      <div class="categories">
+        <a href="explore.html?mood=Afrobeats" class="category afro">Afrobeats</a>
+        <a href="explore.html?mood=Gospel" class="category gospel">Gospel</a>
+        <a href="explore.html?mood=Hip-Hop" class="category hiphop">Hip-Hop</a>
+        <a href="explore.html?mood=R&B" class="category rnb">R&B</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Featured Songs</h2>
+        <a href="explore.html">Explore more</a>
+      </div>
+      <div class="songs" id="featuredSongs"></div>
+    </section>
+
+    <section class="section artist-banner">
+      <div>
+        <p class="tag">FOR MUSIC CREATORS</p>
+        <h2>Share your sound with the world.</h2>
+        <p>Bring your music to VibeWave.</p>
+      </div>
+      <a class="button" href="upload.html">Upload Music</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> VibeWave Music.</p>
+    <p>Discover. Listen. Create.</p>
+  </footer>
+
+  <div class="mini-player">
+    <div>
+      <strong id="currentTitle">Choose a song</strong>
+      <small id="currentArtist">VibeWave Music</small>
+    </div>
+    <button id="playBtn" aria-label="Play or pause">▶</button>
+    <audio id="audioPlayer" preload="none"></audio>
+  </div>
+</body>
+</html>
