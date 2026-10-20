@@ -1,0 +1,135 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0d14;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background: #121522;
+}
+
+.logo {
+  color: #66efc5;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo span {
+  color: white;
+  margin-left: 5px;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #b9bdca;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  color: #66efc5;
+}
+
+main {
+  padding: 35px 7%;
+}
+
+.welcome {
+  padding: 30px;
+  border-radius: 16px;
+  background: #171c2b;
+}
+
+.welcome h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  color: #b9bdca;
+}
+
+input {
+  width: 100%;
+  max-width: 500px;
+  padding: 14px;
+  margin-top: 15px;
+  border: 1px solid #34394a;
+  border-radius: 8px;
+  background: #0b0d14;
+  color: white;
+}
+
+.music-section {
+  margin-top: 35px;
+}
+
+.song-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+}
+
+.song-card {
+  padding: 18px;
+  background: #171c2b;
+  border-radius: 12px;
+}
+
+.song-card h3 {
+  margin-bottom: 6px;
+}
+
+.song-card p {
+  color: #b9bdca;
+}
+
+.song-card button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background: #66efc5;
+  color: #0b0d14;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.player {
+  margin-top: 35px;
+  padding: 20px;
+  background: #171c2b;
+  border-radius: 12px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 20px 5%;
+  }
+
+  .welcome h1 {
+    font-size: 28px;
+  }
+}
