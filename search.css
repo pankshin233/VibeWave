@@ -1,0 +1,130 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b0d14;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 20px 7%;
+  background: #121522;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #66efc5;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo span {
+  color: white;
+  margin-left: 5px;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #b9bdca;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  color: #66efc5;
+}
+
+main {
+  padding: 35px 7%;
+}
+
+.search-area {
+  padding: 30px;
+  background: #171c2b;
+  border-radius: 15px;
+}
+
+.search-area h1 {
+  font-size: 34px;
+}
+
+.search-area p {
+  color: #b9bdca;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  border: 1px solid #34394a;
+  border-radius: 9px;
+  background: #0b0d14;
+  color: white;
+  font-size: 16px;
+}
+
+.results {
+  margin-top: 30px;
+}
+
+.results-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 18px;
+}
+
+.song-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #171c2b;
+}
+
+.song-card p {
+  color: #b9bdca;
+}
+
+.song-card button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 20px;
+  background: #66efc5;
+  color: #0b0d14;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.player {
+  margin-top: 30px;
+  padding: 20px;
+  background: #171c2b;
+  border-radius: 12px;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 20px 5%;
+  }
+
+  .search-area h1 {
+    font-size: 27px;
+  }
+}
