@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlists | VibeWave Music</title>
+  <link rel="stylesheet" href="playlist.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">VibeWave<span>Music</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="search.html">Search</a>
+      <a href="library.html">My Library</a>
+      <a href="playlist.html" class="active">Playlists</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h1>Your Playlists</h1>
+      <p>Create playlists and organise the music you love.</p>
+    </section>
+
+    <section class="create-section">
+      <h2>Create a Playlist</h2>
+      <form id="playlistForm">
+        <input id="playlistName" type="text"
+          placeholder="Playlist name" required maxlength="60">
+
+        <input id="playlistDescription" type="text"
+          placeholder="Description (optional)" maxlength="150">
+
+        <button type="submit">Create Playlist</button>
+      </form>
+      <p id="statusMessage" role="status"></p>
+    </section>
+
+    <section class="playlists-section">
+      <h2>My Collections</h2>
+      <div id="playlistList" class="playlist-list"></div>
+      <p id="emptyMessage" hidden>
+        No playlists yet. Create your first playlist above.
+      </p>
+    </section>
+  </main>
+
+  <script src="playlist.js"></script>
+</body>
+</html>
