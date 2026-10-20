@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Library | VibeWave Music</title>
+  <link rel="stylesheet" href="library.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">VibeWave<span>Music</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="search.html">Search</a>
+      <a href="library.html" class="active">My Library</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h1>My Music Library</h1>
+      <p>Keep your favourite songs in one place.</p>
+    </section>
+
+    <section class="library-section">
+      <div class="section-heading">
+        <h2>Favourite Songs</h2>
+        <button id="clearButton" type="button">Clear Library</button>
+      </div>
+
+      <div id="songList" class="song-list"></div>
+      <p id="emptyMessage" hidden>
+        Your library is empty. Add a song below to get started.
+      </p>
+    </section>
+
+    <section class="add-section">
+      <h2>Add a Song</h2>
+      <form id="addSongForm">
+        <input id="songTitle" type="text"
+          placeholder="Song title" required>
+
+        <input id="songArtist" type="text"
+          placeholder="Artist name" required>
+
+        <input id="songUrl" type="url"
+          placeholder="Direct audio URL (https://...)" required>
+
+        <button type="submit">Add to Library</button>
+      </form>
+      <p id="statusMessage" role="status"></p>
+    </section>
+
+    <section class="player">
+      <p id="nowPlaying">Select a song to listen</p>
+      <audio id="audioPlayer" controls></audio>
+    </section>
+  </main>
+
+  <script src="library.js"></script>
+</body>
+</html>
